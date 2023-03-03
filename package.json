@@ -1,0 +1,7 @@
+{
+  "name": "balsancarismail.github.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}

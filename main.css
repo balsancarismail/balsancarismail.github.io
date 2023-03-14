@@ -1,35 +1,26 @@
-.container--paragraph{
+body{
+    font-family: sans-serif;
+    color: #444444;
+}
+.article-p{
+    line-height: 1.6;
+}
+.article--header-h1{
     text-align: center;
-    height: fit-content;
 }
-.container--div{
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    background-color: lightgoldenrodyellow;
-    border: 3px solid ;
+.article-a{
+    color: darkcyan;
+    display:inline-block;
+    transition: transform 2s;
 }
-.button {
-    background-color: lightgoldenrodyellow;
-    border-radius: 100px;
-    color: green;
-    cursor: pointer;
-    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    padding: 7px 20px;
-    text-align: center;
-    justify-content: center;
-    transition: all 250ms;
-    border: 0;
-    font-size: 16px;
-    touch-action: manipulation;
-    margin: auto;
-    width: 10%;
-    display: flex;
+.article-a:hover{
+    color: orangered;
+    text-decoration: none;
+    transform: scale(1.5);
+
 }
-.btn-stop{
-    position: absolute;
-    visibility: hidden;
-    overflow: hidden;
+.article-div{
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
 }

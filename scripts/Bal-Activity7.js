@@ -16,16 +16,24 @@ window.onload = function () {
 function displayResults() {
   var average = 0;
   var highScore = 0;
-  for (var i = 0; i < scores.length; i++) {
+  var highScoreName = "";  // New variable to keep track of the name
+
+  for(var i = 0; i < scores.length; i++) {
     average = (average * i + scores[i]) / (i + 1);
-    highScore = scores[i] > highScore ? scores[i] : highScore;
+
+    // If this score is higher than the current high score
+    if (scores[i] > highScore) {
+      highScore = scores[i];  // Update high score
+      highScoreName = names[i];  // Save the name associated with this score
+    }
   }
 
   var resultsDiv = $("results");
   resultsDiv.innerHTML = `<h2>Results</h2>
-                            <p>Average score is ${average.toFixed(2)}</p>
-                            <p>High score is ${highScore}</p>`;
+                            <p>Average score = ${average.toFixed(2)}</p>
+                            <p>High score = ${highScoreName} with a score of ${highScore}</p>`;  // Display the name with the high score
 }
+
 
 function displayScores() {
   var scoresHeader = $("scores_header");

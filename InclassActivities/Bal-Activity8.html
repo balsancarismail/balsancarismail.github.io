@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen"
+    href="../assets/Bal-Activity8.css" /> <link rel="stylesheet" type="text/css"
+    media="screen" href="./jquery-ui-1.13.2/jquery-ui-1.13.2/jquery-ui.min.css"
+    />
+    <script src="./jquery-ui-1.13.2/jquery-ui-1.13.2/external/jquery/jquery.js"></script>
+    <script src="./jquery-ui-1.13.2/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../scripts/Bal-Activity8.js"></script>
+  </head>
+  <body>
+    <div class="center-div">
+      <form id="activityForm">
+        <!-- First question -->
+        <div class="form-group">
+          <label for="autocomplete">Programming Languages</label>
+          <input type="text" id="autocomplete" required />
+        </div>
+
+        <!-- Second question -->
+        <div class="form-group">
+          <label for="birthday">What is your birthday?</label>
+          <input type="text" id="birthday" />
+        </div>
+
+        <!-- Third question -->
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter a valid email"
+            required
+          />
+        </div>
+
+        <!-- Fourth question -->
+        <div class="form-group">
+          <label for="website">Website</label>
+          <input type="url" id="website" required />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

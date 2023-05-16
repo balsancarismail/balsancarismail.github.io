@@ -97,7 +97,6 @@ main {
 .footer {
   display: flex;
   width: 100%;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, antiquewhite, #fff);
@@ -183,7 +182,14 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: orangered;
 }
-
+main {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .container {
   border-radius: 5px;
   background-color: #cfc3c3a5;
@@ -204,4 +210,14 @@ input[type="submit"]:hover {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#email {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }

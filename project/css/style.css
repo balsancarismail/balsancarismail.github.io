@@ -57,7 +57,7 @@ ul {
 li {
   margin: 0 10px;
 }
-a {
+header a {
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -169,19 +169,11 @@ main {
 }
 
 .recipe-card {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 50px;
-  justify-content: space-between;
-  max-width: 1200px;
-  width: 100%;
-  height: auto;
   box-shadow: 0px 0px 10px rgba(156, 127, 32, 0.719);
   border-radius: 15px;
-  overflow: hidden;
 }
-
 .recipe-image {
   width: 100%;
   max-width: 600px;
@@ -262,6 +254,16 @@ main {
 }
 
 .social-media a {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  max-width: 200px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
   color: #fff;
   font-size: 24px;
   transition: all 0.3s ease-in-out;

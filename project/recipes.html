@@ -8,6 +8,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script>
+    <script src="./scripts/recipes.js"></script>
   </head>
   <body>
     <header>
@@ -26,67 +29,78 @@
     </header>
 
     <main>
-      <section class="recipes" id="recipe">
-        <h2>All Our Recipes</h2>
-        <div class="recipe-card">
-          <div class="recipe-image">
-            <img src="images/Spaghetti-Bolognese.jpg" alt="Recipe 1" />
-          </div>
-          <div class="recipe-details">
-            <h3>Spaghetti Bolognese</h3>
-            <p>
-              This classic Italian dish is perfect for a weeknight dinner. It's
-              easy to make and tastes delicious. Serve it with a side salad and
-              some garlic bread for a complete meal.
-            </p>
-            <button class="button"><span>View Recipe </span></button>
-          </div>
-        </div>
-        <div class="recipe-card">
-          <div class="recipe-image">
-            <img src="images/Grilled-Chicken.jpg" alt="Recipe 2" />
-          </div>
-          <div class="recipe-details">
-            <h3>Grilled Chicken</h3>
-            <p>
-              This healthy and flavorful dish is perfect for a summer barbecue.
-              Marinate the chicken in your favorite sauce and grill to
-              perfection. Serve with some grilled vegetables and corn on the cob
-              for a complete meal.
-            </p>
-            <button class="button"><span>View Recipe </span></button>
+      <div class="btn-div">
+        <button class="btn-filter" data-filter="all">All</button>
+        <button class="btn-filter" data-filter="1">Main Dish</button>
+        <button class="btn-filter" data-filter="2">Dessert</button>
+      </div>
+      <div class="filtr-container">
+        <div class="filtr-item" data-category="1">
+          <div class="recipe-card">
+            <div class="recipe-image">
+              <img src="images/Spaghetti-Bolognese.jpg" alt="Recipe 1" />
+            </div>
+            <div class="recipe-details">
+              <h3>Spaghetti Bolognese</h3>
+              <p>
+                This classic Italian dish is perfect for a weeknight dinner.
+                It's easy to make and tastes delicious. Serve it with a side
+                salad and some garlic bread for a complete meal.
+              </p>
+              <button class="button"><span>View Recipe </span></button>
+            </div>
           </div>
         </div>
-        <div class="recipe-card">
-          <div class="recipe-image">
-            <img src="images/Chocolate-Cake.jpg" alt="Recipe 3" />
+        <!-- <div class="filtr-item" data-category="1">
+          <div class="recipe-card">
+            <div class="recipe-image">
+              <img src="images/Grilled-Chicken.jpg" alt="Recipe 2" />
+            </div>
+            <div class="recipe-details">
+              <h3>Grilled Chicken</h3>
+              <p>
+                This healthy and flavorful dish is perfect for a summer
+                barbecue. Marinate the chicken in your favorite sauce and grill
+                to perfection. Serve with some grilled vegetables and corn on
+                the cob for a complete meal.
+              </p>
+              <button class="button"><span>View Recipe </span></button>
+            </div>
           </div>
-          <div class="recipe-details">
-            <h3>Chocolate Cake</h3>
-            <p>
-              This decadent dessert is perfect for any occasion. It's rich,
-              chocolatey, and easy to make. Serve it with a scoop of vanilla ice
-              cream for a truly indulgent treat.
-            </p>
-            <button class="button"><span>View Recipe </span></button>
+        </div> -->
+        <div class="filtr-item" data-category="2">
+          <div class="recipe-card">
+            <div class="recipe-image">
+              <img src="images/Chocolate-Cake.jpg" alt="Recipe 3" />
+            </div>
+            <div class="recipe-details">
+              <h3>Chocolate Cake</h3>
+              <p>
+                This decadent dessert is perfect for any occasion. It's rich,
+                chocolatey, and easy to make. Serve it with a scoop of vanilla
+                ice cream for a truly indulgent treat.
+              </p>
+              <button class="button"><span>View Recipe </span></button>
+            </div>
           </div>
         </div>
-        <div class="recipe-card">
-          <div class="recipe-image">
-            <img src="images/Beef-Stew.jpg" alt="Recipe 4" />
-          </div>
-          <div class="recipe-details">
-            <h3>Beef Stew</h3>
-            <p>
-              This hearty and comforting dish is perfect for a cold winter
-              night. It's easy to make and can be prepared in advance. Serve it
-              with some crusty bread for a complete meal.
-            </p>
-            <button class="button"><span>View Recipe </span></button>
+        <div class="filtr-item" data-category="1">
+          <div class="recipe-card">
+            <div class="recipe-image">
+              <img src="images/Beef-Stew.jpg" alt="Recipe 4" />
+            </div>
+            <div class="recipe-details">
+              <h3>Beef Stew</h3>
+              <p>
+                This hearty and comforting dish is perfect for a cold winter
+                night. It's easy to make and can be prepared in advance. Serve
+                it with some crusty bread for a complete meal.
+              </p>
+              <button class="button"><span>View Recipe </span></button>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- repeat for remaining recipes -->
+      </div>
 
       <section class="footer">
         <div class="contact-info">

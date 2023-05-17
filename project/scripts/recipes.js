@@ -7,6 +7,7 @@ $(document).ready(function () {
     delayMode: "alternate", // 'progressive' or 'alternate'
     layout: "sameSize", // See layouts
     setupControls: true, // Should be false if controls are already setup
+    gutterPixels: 50,
   });
 
   $(".btn-filter").on("click", function () {

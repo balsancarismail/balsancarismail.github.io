@@ -8,7 +8,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../InclassActivities/jquery-ui-1.13.2/jquery-ui-1.13.2/jquery-ui.min.css"
+    />
+    <script src="../InclassActivities/jquery-ui-1.13.2/jquery-ui-1.13.2/external/jquery/jquery.js"></script>
+    <script src="../InclassActivities/jquery-ui-1.13.2/jquery-ui-1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script>
     <script src="./scripts/recipes.js"></script>
   </head>
@@ -16,11 +21,11 @@
     <header>
       <nav>
         <div class="left-nav">
-          <a href="index.html" class="logo">Recipes</a>
+          <a href="index.html" class="logo">Home</a>
         </div>
         <div class="right-nav">
           <ul>
-            <li><a href="recipes.html">Recipes</a></li>
+            <li><a class="current-a" href="recipes.html">Recipes</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
@@ -47,7 +52,22 @@
                 It's easy to make and tastes delicious. Serve it with a side
                 salad and some garlic bread for a complete meal.
               </p>
-              <button class="button"><span>View Recipe </span></button>
+              <button class="button show-recipe" data-dialog="1">
+                <span>View Recipe </span>
+              </button>
+            </div>
+            <!-- Dialog Structure -->
+            <div
+              id="dialog-1"
+              class="dialog"
+              title="Recipe Details"
+              style="display: none"
+            >
+              <p class="dialog-content">
+                This classic Italian dish is perfect for a weeknight dinner.
+                It's easy to make and tastes delicious. Serve it with a side
+                salad and some garlic bread for a complete meal.
+              </p>
             </div>
           </div>
         </div>
@@ -64,7 +84,22 @@
                 to perfection. Serve with some grilled vegetables and corn on
                 the cob for a complete meal.
               </p>
-              <button class="button"><span>View Recipe </span></button>
+              <button class="button show-recipe" data-dialog="2">
+                <span>View Recipe </span>
+              </button>
+            </div>
+            <div
+              id="dialog-2"
+              class="dialog"
+              title="Recipe Details"
+              style="display: none"
+            >
+              <p class="dialog-content">
+                This healthy and flavorful dish is perfect for a summer
+                barbecue. Marinate the chicken in your favorite sauce and grill
+                to perfection. Serve with some grilled vegetables and corn on
+                the cob for a complete meal.
+              </p>
             </div>
           </div>
         </div>
@@ -80,7 +115,21 @@
                 chocolatey, and easy to make. Serve it with a scoop of vanilla
                 ice cream for a truly indulgent treat.
               </p>
-              <button class="button"><span>View Recipe </span></button>
+              <button class="button show-recipe" data-dialog="3">
+                <span>View Recipe </span>
+              </button>
+            </div>
+            <div
+              id="dialog-3"
+              class="dialog"
+              title="Recipe Details"
+              style="display: none"
+            >
+              <p class="dialog-content">
+                This decadent dessert is perfect for any occasion. It's rich,
+                chocolatey, and easy to make. Serve it with a scoop of vanilla
+                ice cream for a truly indulgent treat.
+              </p>
             </div>
           </div>
         </div>
@@ -96,8 +145,22 @@
                 night. It's easy to make and can be prepared in advance. Serve
                 it with some crusty bread for a complete meal.
               </p>
-              <button class="button"><span>View Recipe </span></button>
+              <button class="button show-recipe" data-dialog="4">
+                <span>View Recipe </span>
+              </button>
             </div>
+          </div>
+          <div
+            id="dialog-4"
+            class="dialog"
+            title="Recipe Details"
+            style="display: none"
+          >
+            <p class="dialog-content">
+              This hearty and comforting dish is perfect for a cold winter
+              night. It's easy to make and can be prepared in advance. Serve it
+              with some crusty bread for a complete meal.
+            </p>
           </div>
         </div>
       </div>

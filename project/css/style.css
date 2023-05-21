@@ -75,7 +75,9 @@ a:hover {
   background-color: orangered;
   cursor: pointer;
 }
-
+.current-a{
+  background-color: rgba(114, 131, 109, 0.85);
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;

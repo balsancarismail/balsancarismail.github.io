@@ -76,7 +76,9 @@ a:hover {
   background-color: orangered;
   cursor: pointer;
 }
-
+.current-a{
+  background-color: rgba(114, 131, 109, 0.85);
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -302,7 +304,7 @@ footer {
   height: 700px;
 }
 .btn-div {
-  padding-top: 100px;
+  padding-top: 120px;
   display: flex;
   flex-direction: row;
   justify-content: center;

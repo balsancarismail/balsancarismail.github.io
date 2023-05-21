@@ -19,3 +19,21 @@ $(document).ready(function () {
     }
   });
 });
+$(function () {
+  $(".dialog").dialog({
+    autoOpen: false,
+    show: {
+      effect: "blind",
+      duration: 1000,
+    },
+    hide: {
+      effect: "explode",
+      duration: 1000,
+    },
+  });
+
+  $(".show-recipe").on("click", function () {
+    let id = $(this).data("dialog");
+    $(`#dialog-${id}`).dialog("open");
+  });
+});

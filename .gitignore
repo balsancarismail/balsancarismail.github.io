@@ -10,3 +10,9 @@
 /node_modules
 package-lock.json
 ./idea/*
+/.idea/vcs.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/modules.xml
+/.idea/misc.xml
+/.idea/jpa-buddy.xml
+/.idea/balsancarismail.github.io.iml

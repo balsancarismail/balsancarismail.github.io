@@ -3,14 +3,14 @@ $(document).ready(function () {
     event.preventDefault(); // prevent the default action
 
     const fileName = $(this).attr("title"); // get the title attribute
-    $.getJSON("/InclassActivities/speakers_Activity12/json_files/" + fileName + ".json", function (data) {
+    $.getJSON("./json_files/" + fileName + ".json", function (data) {
       // clear the main element
       $("main").empty();
 
       // create new elements with the retrieved data
       const speaker = data.speakers[0]; // considering only the first speaker from the data
       const newContent = `
-                <h1>${speaker.title}</h1>
+                <h1>${ "./" + speaker.title}</h1>
                 <img src="${speaker.image}">
                 <h2>${speaker.month}<br>${speaker.speaker}</h2>
                 <p>${speaker.text}</p>`;

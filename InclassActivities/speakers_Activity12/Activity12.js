@@ -3,7 +3,7 @@ $(document).ready(function () {
     event.preventDefault(); // prevent the default action
 
     const fileName = $(this).attr("title"); // get the title attribute
-    $.getJSON("/json_files/" + fileName + ".json", function (data) {
+    $.getJSON("/InclassActivities/speakers_Activity12/json_files/" + fileName + ".json", function (data) {
       // clear the main element
       $("main").empty();
 
